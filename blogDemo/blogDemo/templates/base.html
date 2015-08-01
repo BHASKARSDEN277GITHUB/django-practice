@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+	    <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}style.css">
+            <title>
+                {% block title %}{% endblock %}
+            </title>
+            </head>
+        <body>
+		 <div class="test">
+                {%block test%}
+                {%endblock%}
+                </div>
+		<center>
+		<div class="header1">
+		{%block header %}
+		{%endblock%}
+		</div>
+		</center>
+            <div class="content">
+                {% block cont %}
+                {% endblock %}
+            </div>
+        </body>
+   </html>

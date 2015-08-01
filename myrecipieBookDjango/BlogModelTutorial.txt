@@ -1,0 +1,40 @@
+#create blog [or whatever name you say] app in the project's root folder 
+#create or update models.py file inside the app directory to specify the model for this blog application (Model mimics a database table , I guess)
+#go to setting.py and add the newly created application
+
+#now setting up the database
+#update the database tuple in the settings file to add name of database you want to create for this project
+#run the coomand python manage.py syncdb , to create the database
+#Now add admin application to the settings.py , applications tuple
+#set SITE_ID=1 //if you do this , you might need to add admin applications names
+
+
+##synching the blog app with admin console
+#create admin.py in the blog app folder
+#register the blog site there (You can modify the admin cosole UI for this app inthe same file also)
+#now go to the admin console at the browser where you can add post 
+
+######NOW WE ARE ALL SET FOR WRITIN THE URLS , VIEWS AND TEMPLATES FOR OUR BLOG APPLICATION
+
+#there are three steps to do this
+##writin url patterns in urls.py
+##write the view functions into blog/views.py
+###create templates for the views
+
+
+#So write the url patterns
+
+#Now write view functions
+
+#Now create the templates (before this add templates path to TEMPLATE_DIRS tuplein settings.py file
+
+#create templates/base.html for base template , all other templates shall inherit this template
+
+
+what are you waiting for . Fuckin refresh the browser window and get your index.html page 
+
+#for serving static files in django 
+
+## insert line STATIC_URL='/static/'
+and 
+	STATICFILES_DIRS tuple to the settings.py file
